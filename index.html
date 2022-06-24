@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Кузьмін Михайло</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+
+<style>
+.header {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px;
+    color: red;
+}
+.productCarousel {
+    margin-top: 5%;
+}
+.table {
+    margin-top: 300px;
+}
+.table {
+    margin-top: 250px;
+    text-align: center;
+}
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+
+</head>
+
+<body>
+<main class="container">
+<div class="row">
+    <div class="col align-self-start header">
+        <h1>Новинки Samsung</h1>
+    </div>
+</div>
+<div class="row justify-content-center productCarousel">
+    <div class="col-12">
+        <ul id="lightSlider">
+            <li>
+                <img src="https://m.media-amazon.com/images/I/61Ul9XqndAL._AC_SL1000_.jpg" style="height: 150px; width: 100px;" alt="Samsung Galaxy Note 9">
+                <h6>Смартфон Samsung Galaxy Note 9</h6>
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/81wLkQ64HXL._AC_SL1500_.jpg" style="height: 150px; width: 120px;" alt="Samsung Galaxy S9">
+                <h6>Смартфон Samsung Galaxy S9</h6>
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/81VnTSgQgQL._AC_SL1500_.jpg" style="height: 150px; width: 120px;" alt="Samsung Galaxy S9 Plus">
+                <h6>Смартфон Samsung Galaxy S9 Plus</h6>
+            </li>
+            <li>
+                <img src="https://m.media-amazon.com/images/I/51hvE4YI96L._AC_SL1000_.jpg" style="height: 150px; width: 130px;" alt="Samsung Galaxy Note 8">
+                <h6>Смартфон Samsung Galaxy Note 8</h6>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="row justify-content-center table">
+    <h6>Порівняльна характеристика</h6>
+    <table>
+        <tr>
+            <th style="background: #41aee0; color: white;">Модель</th>
+            <th>Samsung Galaxy Note 9</th>
+            <th>Samsung Galaxy S9</th>
+            <th>Samsung Galaxy S9 Plus</th>
+            <th>Samsung Galaxy Note 8</th>
+        </tr>
+        <tr>
+            <td style="background: #41aee0; color: white;">Ціна</td>
+            <td>13500 грн</td>
+            <td>12747 грн</td>
+            <td>14455 грн</td>
+            <td>9949 грн</td>
+        </tr>
+        <tr>
+            <td style="background: #41aee0; color: white;">Вигляд</td>
+            <td>
+                <img src="https://m.media-amazon.com/images/I/61Ul9XqndAL._AC_SL1000_.jpg" style="height: 150px; width: 100px;" alt="Samsung Galaxy Note 9">
+            </td>
+            <td>
+                <img src="https://m.media-amazon.com/images/I/81wLkQ64HXL._AC_SL1500_.jpg" style="height: 150px; width: 120px;" alt="Samsung Galaxy S9">
+            </td>
+            <td>
+                <img src="https://m.media-amazon.com/images/I/81VnTSgQgQL._AC_SL1500_.jpg" style="height: 150px; width: 120px;" alt="Samsung Galaxy S9 Plus">
+            </td>
+            <td>
+                <img src="https://m.media-amazon.com/images/I/51hvE4YI96L._AC_SL1000_.jpg" style="height: 150px; width: 130px;" alt="Samsung Galaxy Note 8">
+            </td>
+        </tr>
+      </table>
+</div>
+<div style="text-align: center; margin-top: 40px; width: 100%; height: 50px; border: 1px solid black;">
+    <h6>@ Кузьмін Михайло, КН-21з</h6>
+</div>
+</main>
+
+<!-- JS-->
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+<script src="js/lightslider.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#lightSlider").lightSlider({
+            item: 4,
+        }); 
+    });
+</script>
+</body>
+</html>
